@@ -1,0 +1,3 @@
+# Don't upload Wunderlist exports and Evernote imports
+wunderlist*.json
+evernote*.enex
