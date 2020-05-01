@@ -10,7 +10,7 @@ import pandas as pd
 def wunderlist_to_evernote(input_file, output_file):
 
     # Read tasks from Wunderlist export JSON file
-    with open(input_file) as wunderlist_raw:
+    with open(input_file, encoding='utf-8-sig') as wunderlist_raw:
         wunderlist = json.load(wunderlist_raw)
 
     # Generate dict with list IDs and titles
@@ -129,7 +129,7 @@ def wunderlist_to_evernote(input_file, output_file):
 if __name__ == '__main__':
     if not len(sys.argv) > 1:
         # i.e. if invoked without argument or not from terminal at all
-        input_file = 'wunderlist-2019025-15_56_50.json'
+        input_file = 'Tasks.json'
         print('wunderlist_to_evernote.py: No input file entered, using '
               '{}'.format(
             input_file))

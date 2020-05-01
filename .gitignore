@@ -1,3 +1,8 @@
 # Don't upload Wunderlist exports and Evernote imports
-wunderlist*.json
-evernote*.enex
+*.zip
+*.json
+*.enex
+
+# Mac's and PyCharm's hidden files
+.DS_Store
+.idea
